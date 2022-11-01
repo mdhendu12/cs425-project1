@@ -79,7 +79,7 @@ public class RateServlet extends HttpServlet {
             
             
             if (!noKey) {
-                int access_count = userDAO.findUser(key);
+                int access_count = userDAO.getAccessCount(key);
                 if (access_count >= 10 || access_count == -1) {
                     response.setStatus(HttpServletResponse.SC_FORBIDDEN);
                     out.println("{\"message\": \"You have exceeded the maximum number of requests per day.\",\"success\": false}");                 

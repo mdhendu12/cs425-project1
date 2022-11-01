@@ -1,16 +1,8 @@
 package edu.jsu.mcis.project1.dao;
 
-import edu.jsu.mcis.project1.dao.DAOFactory;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import org.json.simple.*;
-
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import org.json.simple.JSONObject;
-import org.json.simple.JSONValue;
 
 public class MenuDAO {
     

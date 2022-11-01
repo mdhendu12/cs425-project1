@@ -6,7 +6,6 @@ import java.sql.ResultSet;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import org.json.simple.JSONObject;
-import org.json.simple.JSONValue;
 
 public class UserDAO {
 
@@ -20,7 +19,7 @@ public class UserDAO {
         this.daoFactory = dao;
     }
     
-    public int findUser(String key) {
+    public int getAccessCount(String key) {
 
         JSONObject json = new JSONObject();
         json.put("success", false);
@@ -140,7 +139,6 @@ public class UserDAO {
 
         }
 
-        //return JSONValue.toJSONString(json);
         return -1;
 
     }
