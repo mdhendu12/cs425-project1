@@ -36,7 +36,7 @@
             <legend>Currency Conversion Calculator</legend>
 
             <p>Convert to: 
-                <%= menuDAO.getSessionListAsHTML() %>
+                <%= menuDAO.getCurrencyListAsHTML() %>
 
             <p>
                 <label for="usd_value">Value (in USD):</label>

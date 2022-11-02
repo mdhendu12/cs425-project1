@@ -41,8 +41,10 @@ var Lab4 = (function () {
                 rates = data;
                 convert();
             },
-            error: function(xhr, statusText) {
-                alert(statusText.toUpperCase() + " " + xhr.status + ": You have exceeded the daily amount of requests, or the key was not found in the database!");
+            error: function(xhr, statusText, response) {
+                alert("Error!");
+                $("output").html(response);
+                //alert(statusText.toUpperCase() + " " + xhr.status + ": You have exceeded the daily amount of requests, or the key was not found in the database!");
                 
             }
         });

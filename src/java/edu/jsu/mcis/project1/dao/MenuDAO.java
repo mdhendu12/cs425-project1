@@ -8,13 +8,13 @@ public class MenuDAO {
     
     private final DAOFactory daoFactory;
     
-    private final String QUERY_SESSION_LIST = "SELECT * FROM currency";
+    private final String QUERY_SESSION_LIST = "SELECT * FROM currency ORDER BY description";
     
     MenuDAO(DAOFactory dao) {
         this.daoFactory = dao;
     }
     
-    public String getSessionListAsHTML() {
+    public String getCurrencyListAsHTML() {
         
         StringBuilder s = new StringBuilder();
 
